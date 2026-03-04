@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExpressGo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oB+vla5N1TwkKfB7b5HF2t8YqK5NVhL+C5kC95Uaf4vPzv7lxDDqtUu7Qn07NWpYzqI+ul8AxtrH9vYcD7r95g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+        <i class="fas fa-truck-fast text-blue-500 text-2xl"></i>
+        EXPRESSGO
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 font-medium">
+        <a href="#" class="hover:text-blue-600 transition">Home</a>
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="dashboard.jsp" class="hover:text-blue-600 transition">Dashboard</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+      <a href="login" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">
+        <i class="fas fa-calendar-check mr-2"></i>Login 
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Fast. Reliable. <span class="text-yellow-300">EXPRESSGO.</span>
+      </h1>
+      <p id="datetime" class="text-white text-lg mb-4"></p>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Your trusted partner for quick, safe, and affordable transportation across the country.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#book" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full transition duration-300 shadow-md">
+          <i class="fas fa-truck mr-2"></i> Book a Transport
+        </a>
+        <a href="#track" class="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-6 py-3 rounded-full transition duration-300 shadow-md">
+          <i class="fas fa-location-arrow mr-2"></i> Track Your Package
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="bg-gray-100 py-16" id="about">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">About EXPRESSGO</h2>
+      <p class="max-w-2xl mx-auto text-gray-700 text-lg mb-12">
+        EXPRESSGO is your all-in-one transportation platform designed to deliver speed, reliability, and convenience.
+        Whether it’s a package, a move, or a long-distance shipment — we’ve got you covered.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+          <p class="text-gray-600">To connect people and businesses through fast, secure, and eco-friendly transportation solutions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+          <p class="text-gray-600">To become the leading digital transport network, empowering delivery innovation and customer trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 bg-white" id="services">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Our Services</h2>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+        EXPRESSGO offers a range of reliable transport services tailored for your needs. We move it all — safely and on time.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-5xl mb-4">
+            <i class="fas fa-box"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Parcel Delivery</h3>
+          <p class="text-gray-600">Fast and secure delivery of your parcels to any destination, nationwide.</p>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-5xl mb-4">
+            <i class="fas fa-truck-moving"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Moving Services</h3>
+          <p class="text-gray-600">Hassle-free home or office moving services with professional handling.</p>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-blue-600 text-5xl mb-4">
+            <i class="fas fa-route"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Intercity Transport</h3>
+          <p class="text-gray-600">Connect cities efficiently with our fast and affordable transport network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="bg-blue-50 py-16" id="how-it-works">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">How It Works</h2>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+        Our process is simple and transparent. Get started in just a few clicks!
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-gray-100" id="testimonials">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">What Our Customers Say</h2>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+        Thousands trust EXPRESSGO to move what matters — here’s what a few of them have to say:
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Testimonial blocks can be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Date and Time Script -->
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const formatted = now.toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      });
+      document.getElementById('datetime').innerText = formatted;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+
+</body>
+</html>
